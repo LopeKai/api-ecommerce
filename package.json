@@ -11,7 +11,9 @@
   "author": "Kaique araujo lopes",
   "license": "ISC",
   "dependencies": {
+    "celebrate": "^16.0.0",
     "express": "^5.2.1",
+    "express-async-handler": "^1.2.0",
     "firebase-admin": "^14.3.0"
   },
   "devDependencies": {
