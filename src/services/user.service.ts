@@ -1,49 +1,45 @@
-import { getFirestore } from "firebase-admin/firestore";
-import { User } from "../models/use.model";
 import { NotFoundError } from "../errors/not-found.error";
+import { User } from "../models/use.model";
+import { UserRepository } from "../repositories/user.repository";
 
 export class UserService {
+
+    private userRepository: UserRepository; // assim eu deixo ele global
+
+    constructor() {
+        this.userRepository = new UserRepository();
+    };
+
     async getAll(): Promise<User[]> {
-        const snapshot = await getFirestore().collection("users").get();
-        return snapshot.docs.map(doc => {
-            return {
-                id: doc.id,
-                ...doc.data()
-            } as User;
-        }) as User[];
+        return this.userRepository.getAll();
     };
 
     async getById(id: string): Promise<User> {
-        const doc = await getFirestore().collection("users").doc(id as string).get();
-        if (doc.exists) {
-            const user = {
-                id: doc.id,
-                ...doc.data()
-            } as User;
-            return user;
-        } else {
-            throw new NotFoundError("Usuário não encontrado!")
-        }
+        const user = await this.userRepository.getById(id);
+        if (!user) {
+            throw new NotFoundError("Usuário não encontrado!") // é indicado deixar os tratamente de error no service. inves de deixar no resposity
+        };
+        return user;
     };
 
     async save(user: User): Promise<void> {
-        await getFirestore().collection("users").add(user);
+        return this.userRepository.save(user);
     };
 
     async update(id: string, user: User): Promise<void> {
-        const docRef = getFirestore().collection("users").doc(id as string);
+        const _user = await this.userRepository.getById(id);
 
-        if ((await docRef.get()).exists) {
-            docRef.set({
-                nome: user.nome,
-                email: user.email
-            });
-        } else {
+        if (!_user) {
             throw new NotFoundError("Usuário não encontrado!")
         };
+
+        _user.nome = user.nome;
+        _user.email = user.email;
+
+        return this.userRepository.update(_user);
     };
 
     async delete(id: string): Promise<void> {
-        await getFirestore().collection("users").doc(id as string).delete()
+        return this.userRepository.delete(id);
     };
 }
