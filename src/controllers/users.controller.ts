@@ -13,7 +13,7 @@ export class UsersController {
     };
 
     static async save(req: Request, res: Response, next: NextFunction) {
-        new UserService().save(req.body);
+        await new UserService().save(req.body);
         res.status(201).send({
             message: `Usuário criado com sucesso!`
         });

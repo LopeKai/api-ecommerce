@@ -1,13 +1,16 @@
 import { NotFoundError } from "../errors/not-found.error";
 import { User } from "../models/use.model";
 import { UserRepository } from "../repositories/user.repository";
+import { AuthService } from "./auth.service";
 
 export class UserService {
 
-    private userRepository: UserRepository; // assim eu deixo ele global
+    private userRepository: UserRepository; // Assim eu deixo ele global para ser usado em qualquer método da minha class
+    private authService: AuthService;
 
     constructor() {
-        this.userRepository = new UserRepository();
+        this.userRepository = new UserRepository(); // aqui eu estou instanciando 
+        this.authService = new AuthService();
     };
 
     async getAll(): Promise<User[]> {
@@ -23,7 +26,9 @@ export class UserService {
     };
 
     async save(user: User): Promise<void> {
-        return this.userRepository.save(user);
+        const userAuth = await this.authService.create(user);
+        user.id = userAuth.uid;
+        return this.userRepository.update(user);
     };
 
     async update(id: string, user: User): Promise<void> {
