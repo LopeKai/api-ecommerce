@@ -11,4 +11,12 @@ export class AuthController {
             token
         });
     };
+
+    static async recovery(req: Request, res: Response) {
+        const { email } = req.body;
+
+        await new AuthService().recovery(email);
+
+        res.end();
+    };
 };

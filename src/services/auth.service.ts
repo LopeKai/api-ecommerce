@@ -1,5 +1,5 @@
-import { getAuth, UserRecord } from "firebase-admin/auth";
-import { getAuth as getFirebaseAuth, signInWithEmailAndPassword, UserCredential } from "firebase/auth";
+import { getAuth, UpdateRequest, UserRecord } from "firebase-admin/auth";
+import { getAuth as getFirebaseAuth, sendPasswordResetEmail, signInWithEmailAndPassword, UserCredential } from "firebase/auth";
 import { User } from "../models/use.model";
 import { EmailAlreadyExistsError } from "../errors/email-already-exists.error";
 import { UnathorizedError } from "../errors/unauthorized.error";
@@ -22,13 +22,25 @@ export class AuthService {
             });
     }
 
+    async update(id: string, user: User) {
+        const props: UpdateRequest = {
+            displayName: user.nome,
+            email: user.email
+        };
+
+        if (user.password) {
+            props.password = user.password;
+        };
+
+        await getAuth().updateUser(id, props);
+    }
+
     async login(email: string, password: string): Promise<UserCredential> {
         const auth = getFirebaseAuth();
 
         return await signInWithEmailAndPassword(auth, email, password)
             .catch(err => {
                 if (err instanceof FirebaseError) {
-                    console.log("entrou")
                     if (err.code === "auth/invalid-credential") {
                         throw new UnathorizedError();
                     }
@@ -37,4 +49,12 @@ export class AuthService {
                 throw err;
             })
     }
+
+    async delete(id: string) {
+        await getAuth().deleteUser(id);
+    };
+
+    async recovery(email: string) {
+        await sendPasswordResetEmail(getFirebaseAuth(), email);
+    };
 };
