@@ -23,7 +23,7 @@ export class CompanyService {
     };
 
     async save(company: Company): Promise<void> {
-        return this.companyRepository.update(company);
+        return this.companyRepository.save(company);
     };
 
     async update(id: string, company: Company): Promise<void> {
