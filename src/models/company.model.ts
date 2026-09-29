@@ -1,3 +1,5 @@
+import { Joi } from "celebrate";
+
 export type Company = {
     id?: string;
     logomarca: string;
@@ -10,4 +12,17 @@ export type Company = {
     localizacao: string;
     taxaEntrega: string;
     ativa: boolean;
-}
+};
+
+export const companySchema = Joi.object().keys({
+    logomarca: Joi.string(),
+    cpfCnpj: Joi.string().required(),
+    razaoSocial: Joi.string().required(),
+    nomeFantasia: Joi.string().required(),
+    telefone: Joi.string().required(),
+    horarioFuncionamento: Joi.string().required(),
+    enderaco: Joi.string().required(),
+    localizacao: Joi.string().required(),
+    taxaEntrega: Joi.string().required(),
+    ativa: Joi.string().required(),
+});
