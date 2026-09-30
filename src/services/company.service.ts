@@ -1,13 +1,16 @@
 import { NotFoundError } from "../errors/not-found.error";
 import { Company } from "../models/company.model";
 import { CompanyRepository } from "../repositories/company.repository";
+import { UploadFileService } from "./upload-file.service";
 
 export class CompanyService {
 
     private companyRepository: CompanyRepository; // Assim eu deixo ele global para ser usado em qualquer método da minha class
+    private uploadFileService: UploadFileService
 
     constructor() {
         this.companyRepository = new CompanyRepository(); // aqui eu estou instanciando 
+        this.uploadFileService = new UploadFileService("image/companies/");
     };
 
     async getAll(): Promise<Company[]> {
@@ -23,7 +26,9 @@ export class CompanyService {
     };
 
     async save(company: Company): Promise<void> {
-        return this.companyRepository.save(company);
+        const logomarcaurl = await this.uploadFileService.upload(company.logomarca);
+        company.logomarca = logomarcaurl
+        await this.companyRepository.save(company);
     };
 
     async update(id: string, company: Company): Promise<void> {
