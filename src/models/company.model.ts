@@ -36,7 +36,7 @@ export const updateCompanySchema = Joi.object().keys({
     cpfCnpj: Joi.alternatives().try(
         Joi.string().length(11).required(),
         Joi.string().length(14).required(),
-    ),
+    ).required(),
     razaoSocial: Joi.string().required(),
     nomeFantasia: Joi.string().required(),
     telefone: Joi.string().regex(/(^[1-9]{1}[0-9]{1}[0-9]{8}$)|(^[1-9]{1}[0-9]{1}[9]{1}[0-9]{8}$)/).required(),
