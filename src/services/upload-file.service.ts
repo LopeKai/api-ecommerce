@@ -1,5 +1,6 @@
-// import { getStorage, getDownloadURL } from "firebase-admin/storage";
-// import fs from "fs";
+import fs from "node:fs";
+import { fileTypeFromBuffer } from "file-type";
+import { getStorage, getDownloadURL } from "firebase-admin/storage";
 
 export class UploadFileService {
     constructor(private path: string = "") {
@@ -9,18 +10,20 @@ export class UploadFileService {
     async upload(base64: string): Promise<string> {
         // TODO: enquanto não tenho o Storage do Firebase, retorno uma URL fake
         // montada a partir da string recebida + ".png"
-        return `${this.path}${base64}.png`;
+        //return `${this.path}${base64}.png`;
 
-        // const fileBuffer = Buffer.from(base64, "base64");
-        // const fileName = "image.png";
+        const fileBuffer = Buffer.from(base64, "base64");
 
-        // fs.writeFileSync(fileName, fileBuffer); // armazendo a imagem no disco
+        const fileType = await fileTypeFromBuffer(fileBuffer);
+        const fileName = `image.${fileType?.ext}`;
 
-        // const bucket = getStorage().bucket("aqui-vai-ter-minha-url-storageFirabase");
-        // const uploadResponse = await bucket.upload(fileName, {
-        //     destination: this.path + fileName
-        // });
+        fs.writeFileSync(fileName, fileBuffer); // armazendo a imagem no disco
 
-        // return getDownloadURL(uploadResponse[0]);
+        const bucket = getStorage().bucket("aqui-vai-ter-minha-url-storageFirabase");
+        const uploadResponse = await bucket.upload(fileName, {
+            destination: this.path + fileName
+        });
+
+        return getDownloadURL(uploadResponse[0]);
     };
 }

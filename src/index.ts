@@ -1,10 +1,10 @@
 import express from 'express';
 import { initializeApp as initializeAppAdminApp } from 'firebase-admin/app';
 import { initializeApp as initializeFirebaseApp } from 'firebase/app'
-import { routes } from './routes';
-import { errorHandler } from './middlewares/error-handle.middleware';
-import { PageNotFoundHandler } from './middlewares/page-not-found.middleware';
-import { auth } from './middlewares/auth.middleware';
+import { routes } from './routes/index.js';
+import { errorHandler } from './middlewares/error-handle.middleware.js';
+import { PageNotFoundHandler } from './middlewares/page-not-found.middleware.js';
+import { auth } from './middlewares/auth.middleware.js';
 
 initializeAppAdminApp();
 initializeFirebaseApp({
