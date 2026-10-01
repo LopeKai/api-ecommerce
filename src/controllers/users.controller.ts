@@ -3,7 +3,7 @@ import { User } from "../models/use.model.js";
 import { UserService } from "../services/user.service.js";
 
 export class UsersController {
-    static async getAll(req: Request, res: Response) {
+    static async getAll(req: Request, res: Response) { //static significa que o método pertence à classe em si. sem static, precisaria instanciar
         res.send(await new UserService().getAll());
     };
 
