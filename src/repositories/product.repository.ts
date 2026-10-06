@@ -37,8 +37,12 @@ export class ProductRepository {
     async update(product: Product) {
         const docRef = this.collection.doc(product.id!);
         await docRef.set({
+            nome: product.nome,
             descricao: product.descricao,
-            ativa: product.ativa
+            preco: product.preco,
+            imagem: product.imagem,
+            categoria: product.categoria,
+            ativa: product.ativa,
         })
     };
 

@@ -9,5 +9,5 @@ export const productRoutes = Router();
 productRoutes.get("/products", asyncHandler(ProductsController.getAll));
 productRoutes.get("/products/:id", asyncHandler(ProductsController.getById));
 productRoutes.post("/products", celebrate({ [Segments.BODY]: newProductSchema }), asyncHandler(ProductsController.save));
-productRoutes.put("/products", celebrate({ [Segments.BODY]: updateProductSchema }), asyncHandler(ProductsController.update));
+productRoutes.put("/products/:id", celebrate({ [Segments.BODY]: updateProductSchema }), asyncHandler(ProductsController.update));
 productRoutes.delete("/products/:id", asyncHandler(ProductsController.delete));
