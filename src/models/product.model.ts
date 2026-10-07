@@ -11,6 +11,10 @@ export type Product = {
     ativa: boolean;
 };
 
+export const searchQuerySchema = Joi.object().keys({
+    categoriaId: Joi.string().required()
+});
+
 export const newProductSchema = Joi.object().keys({
     nome: Joi.string().min(3).required(),
     descricao: Joi.string().allow(null).default(null),

@@ -1,4 +1,4 @@
-import { CollectionReference, getFirestore } from "firebase-admin/firestore";
+import { CollectionReference, getFirestore, QuerySnapshot } from "firebase-admin/firestore";
 import { Product } from "../models/product.model.js";
 
 export class ProductRepository {
@@ -10,17 +10,27 @@ export class ProductRepository {
 
     async getAll(): Promise<Product[]> {
         const snapshot = await this.collection.get();
+        return this.snapshotToArray(snapshot);
+    };
+
+
+    async search(categoriaId: string): Promise<Product[]> {
+        const snapshot = await this.collection.where("categoria.id", "==", categoriaId).get();
+        return this.snapshotToArray(snapshot);
+    };
+
+    private snapshotToArray(snapshot: QuerySnapshot): Product[] {
         return snapshot.docs.map(doc => {
             return {
                 id: doc.id,
                 ...doc.data()
             }
-        }) as Product[]
+        }) as Product[];
     };
 
     async getById(id: string): Promise<Product | null> {
         const doc = await this.collection.doc(id).get();
-        if(doc.exists) {
+        if (doc.exists) {
             return {
                 id: doc.id,
                 ...doc.data()
@@ -46,7 +56,12 @@ export class ProductRepository {
         })
     };
 
-    async delete(id:string) {
+    async delete(id: string) {
         await this.collection.doc(id).delete();
+    };
+
+    async getCountByCategoria(categoriaId: string): Promise<number> {
+        const countSnapshot = await this.collection.where("categoria.id", "==", categoriaId).count().get() // count -> vai me retonar X numeros de registro
+        return countSnapshot.data().count;
     };
 }
