@@ -11,5 +11,10 @@ export class OrdersController {
         res.status(201).send({
             message: "Pedido criado com sucesso!"
         });
-    }
+    };
+
+    static async search(req: Request, res: Response) {
+        console.log(req.query)
+        res.send(req.query);
+    };
 }
