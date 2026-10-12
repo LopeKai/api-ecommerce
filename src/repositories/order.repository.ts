@@ -1,5 +1,5 @@
 import { CollectionReference, getFirestore } from "firebase-admin/firestore";
-import { Order } from "../models/order.model.js";
+import { Order, QueryParamsOrder } from "../models/order.model.js";
 
 export class OrderRepository {
     private collection: CollectionReference;
@@ -12,5 +12,32 @@ export class OrderRepository {
         await this.collection.add(order)
     };
 
-    
+    async search(queryParams: QueryParamsOrder): Promise<Order[]> {
+        let query: FirebaseFirestore.Query = this.collection;
+
+        if (queryParams.empresaId) {
+            query = query.where("empresa.id", "==", queryParams.empresaId);
+        };
+
+        if (queryParams.dataInicio) {
+            query = query.where("data", ">=", queryParams.dataInicio);
+        };
+
+        if (queryParams.dataFim) {
+            query = query.where("data", "<=", queryParams.dataFim);
+        };
+
+        if (queryParams.status) {
+            query = query.where("status", "==", queryParams.status);
+        };
+
+        const spapshot = await query.get();
+
+        return spapshot.docs.map(doc => {
+            return {
+                id: doc.id,
+                ...doc.data()
+            } as unknown;
+        }) as Order[];
+    };
 }

@@ -18,6 +18,13 @@ export type Order = {
     status: OrderStatus;
 };
 
+export type QueryParamsOrder = {
+    empresaId?: string;
+    dataInicio?: Date;
+    dataFim?: Date;
+    status?: OrderStatus
+};
+
 export enum OrderStatus {
     pendente = "pendente",
     aprovado = "aprovado",
@@ -54,5 +61,6 @@ export const searchParamsOrderQuerySchema = Joi.object().keys({
     empresaId: Joi.string().trim(),
     dataInicio: Joi.date(),
     dataFim: Joi.date(),
-    status: Joi.string().allow(...Object.values(OrderStatus))
+    status: Joi.string().only().allow(...Object.values(OrderStatus))
 });
+
