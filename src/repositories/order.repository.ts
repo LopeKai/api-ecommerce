@@ -1,5 +1,6 @@
 import { CollectionReference, getFirestore } from "firebase-admin/firestore";
 import { Order, QueryParamsOrder } from "../models/order.model.js";
+import dayjs from "dayjs";
 
 export class OrderRepository {
     private collection: CollectionReference;
@@ -20,10 +21,12 @@ export class OrderRepository {
         };
 
         if (queryParams.dataInicio) {
+            queryParams.dataInicio = dayjs(queryParams.dataInicio).add(1, "day").startOf("day").toDate();
             query = query.where("data", ">=", queryParams.dataInicio);
         };
 
         if (queryParams.dataFim) {
+            queryParams.dataFim = dayjs(queryParams.dataFim).add(1, "day").endOf("day").toDate();
             query = query.where("data", "<=", queryParams.dataFim);
         };
 
@@ -34,10 +37,10 @@ export class OrderRepository {
         const spapshot = await query.get();
 
         return spapshot.docs.map(doc => {
-            return {
+            return new Order({
                 id: doc.id,
                 ...doc.data()
-            } as unknown;
-        }) as Order[];
+            } as unknown)
+        })
     };
 }
