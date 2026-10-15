@@ -16,7 +16,7 @@ export class Product {
         this.nome = data.nome;
         this.descricao = data.descricao;
         this.preco = data.preco;
-        this.imagem = data.image;
+        this.imagem = data.imagem;
         this.categoria = new Category(data.categoria);
         this.ativa = data.ativa ?? true;
     }

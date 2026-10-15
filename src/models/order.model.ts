@@ -4,7 +4,7 @@ import { Company } from "./company.model.js";
 import { Customer, customerSchema } from "./customer.model.js";
 import { ordemItemSchema, OrderItem } from "./ordem-item.model.js";
 import { PaymentMethod } from "./payment.method.model.js";
-import { Timestamp } from "firebase-admin/firestore";
+import { DocumentData, FirestoreDataConverter, QueryDocumentSnapshot, Timestamp } from "firebase-admin/firestore";
 
 export class Order {
     id: string;
@@ -25,7 +25,7 @@ export class Order {
         this.cliente = data.cliente;
         this.endereco = data.endereco;
         this.cpfCnpfCupom = data.cpfCnpfCupom;
-        if(data.data instanceof Timestamp) {
+        if (data.data instanceof Timestamp) {
             this.data = data.data.toDate()
         } else {
             this.data = data.data;
@@ -34,7 +34,7 @@ export class Order {
         this.formaPagamento = data.formaPagamento;
         this.taxaEntrega = data.taxaEntrega;
         this.items = data.items;
-        this.status = data.status;
+        this.status = data.status ?? OrderStatus.pendente;
     }
 };
 
@@ -83,4 +83,49 @@ export const searchParamsOrderQuerySchema = Joi.object().keys({
     dataFim: Joi.date(),
     status: Joi.string().only().allow(...Object.values(OrderStatus))
 });
+
+export const orderConverter: FirestoreDataConverter<Order> = {
+    toFirestore: (order: Order): DocumentData => {
+        return {
+            empresa: {
+                id: order.empresa.id,
+                logomarca: order.empresa.logomarca,
+                cpfCnpj: order.empresa.cpfCnpj,
+                razaoSocial: order.empresa.razaoSocial,
+                nomeFantasia: order.empresa.nomeFantasia,
+                telefone: order.empresa.telefone,
+                endereco: order.empresa.endereco,
+                localizacao: order.empresa.localizacao
+            },
+            cliente: {
+                nome: order.cliente.nome,
+                telefone: order.cliente.telefone
+            },
+            endereco: order.endereco ? {
+                cep: order.endereco.cep,
+                logradouro: order.endereco.logradouro,
+                numero: order.endereco.numero,
+                complemento: order.endereco.complemento,
+                cidade: order.endereco.cidade,
+                uf: order.endereco.uf,
+            } : null,
+            cpfCnpfCupom: order.cpfCnpfCupom,
+            data: order.data,
+            isEntrega: order.isEntrega,
+            formaPagamento: {
+                id: order.formaPagamento.id,
+                descricao: order.formaPagamento.descricao
+            },
+            taxaEntrega: order.taxaEntrega,
+            status: order.status
+        };
+    },
+
+    fromFirestore: (snapshot: QueryDocumentSnapshot): Order => {
+        return new Order({
+            id: snapshot.id,
+            ...snapshot.data()
+        })
+    }
+}
 

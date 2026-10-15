@@ -1,16 +1,21 @@
 import { CollectionReference, getFirestore } from "firebase-admin/firestore";
-import { Order, QueryParamsOrder } from "../models/order.model.js";
+import { Order, orderConverter, QueryParamsOrder } from "../models/order.model.js";
 import dayjs from "dayjs";
+import { orderItemConverter } from "../models/ordem-item.model.js";
 
 export class OrderRepository {
-    private collection: CollectionReference;
+    private collection: CollectionReference<Order>;
 
     constructor() {
-        this.collection = getFirestore().collection("orders");
+        this.collection = getFirestore().collection("orders").withConverter(orderConverter);
     };
 
     async save(order: Order) {
-        await this.collection.add(order)
+        const orderRef = await this.collection.add(order)
+        console.log(orderRef)
+        for (let item of order.items) {
+            await orderRef.collection("items").withConverter(orderItemConverter).add(item) // agora os items vao ser salvo em um sub-colecao de order
+        }
     };
 
     async search(queryParams: QueryParamsOrder): Promise<Order[]> {
