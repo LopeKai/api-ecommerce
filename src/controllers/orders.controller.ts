@@ -4,7 +4,7 @@ import { Order, QueryParamsOrder } from "../models/order.model.js";
 
 export class OrdersController {
     static async save(req: Request, res: Response) {
-        const order = req.body as Order;
+        const order = new Order(req.body);
 
         await new OrderService().save(order)
 
@@ -16,5 +16,10 @@ export class OrdersController {
     static async search(req: Request, res: Response) {
         const orders = await new OrderService().search(req.query as QueryParamsOrder);
         res.send(orders);
+    };
+
+    static async getItems(req: Request, res: Response) {
+        const items = await new OrderService().getItems(req.params.id as string);
+        res.send(items)
     };
 }

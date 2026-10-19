@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { AuthService } from "../services/auth.service.js";
 
 export class AuthController {
-    static async login(req: Request, res: Response) {
+    static async login(req: Request, res: Response) { //static significa que o método pertence à classe em si. sem static, precisaria instanciar
         const { email, password } = req.body;
 
         const userRecord = await new AuthService().login(email, password);

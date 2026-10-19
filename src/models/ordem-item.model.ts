@@ -14,6 +14,10 @@ export class OrderItem {
         this.qtde = data.qtde;
         this.observacao = data.observacao;
     }
+
+    getTotal(): number {
+        return this.qtde * this.produto.preco;
+    };
 }
 
 export const ordemItemSchema = Joi.object().keys({
@@ -42,7 +46,7 @@ export const orderItemConverter: FirestoreDataConverter<OrderItem> = {
             observacao: item.observacao,
         }
     },
-    
+
     fromFirestore: (snapshot: QueryDocumentSnapshot): OrderItem => {
         return new OrderItem({
             id: snapshot.id,
