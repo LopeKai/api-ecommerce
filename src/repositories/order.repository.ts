@@ -1,5 +1,5 @@
 import { CollectionReference, getFirestore } from "firebase-admin/firestore";
-import { Order, orderConverter, QueryParamsOrder } from "../models/order.model.js";
+import { Order, orderConverter, OrderStatus, QueryParamsOrder } from "../models/order.model.js";
 import dayjs from "dayjs";
 import { OrderItem, orderItemConverter } from "../models/ordem-item.model.js";
 import { NotFoundError } from "../errors/not-found.error.js";
@@ -32,6 +32,15 @@ export class OrderRepository {
         //     
         //await orderRef.collection("items").withConverter(orderItemConverter).add(item) // agora os items vao ser salvo em um sub-colecao de order
         // }
+    };
+
+    async changeStatus(pedidoId: string, status: OrderStatus) {
+        await this.collection.withConverter(null).doc(pedidoId).set(
+            {
+                status: status
+            }, {
+            merge: true
+        })
     };
 
     async search(queryParams: QueryParamsOrder): Promise<Order[]> {
@@ -74,8 +83,8 @@ export class OrderRepository {
 
     async getById(pedidoId: string): Promise<Order> {
         const order = (await this.collection.doc(pedidoId).get()).data();
-        
-        if(!order) {
+
+        if (!order) {
             throw new NotFoundError("Pedido nao encontrado!")
         }
 

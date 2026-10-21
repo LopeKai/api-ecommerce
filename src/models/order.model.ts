@@ -90,6 +90,15 @@ export const newOrderSchema = Joi.object().keys({
     status: Joi.string().only().allow(OrderStatus.pendente).default(OrderStatus.pendente)
 });
 
+export const changeStatusOrderSchema = Joi.object().keys({
+    status: Joi.string().allow(
+        OrderStatus.aprovado,
+        OrderStatus.entrega,
+        OrderStatus.concluido,
+        OrderStatus.cancelado
+    )
+}).required()
+
 export const searchParamsOrderQuerySchema = Joi.object().keys({
     empresaId: Joi.string().trim(),
     dataInicio: Joi.date(),

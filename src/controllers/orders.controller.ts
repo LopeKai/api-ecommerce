@@ -13,6 +13,15 @@ export class OrdersController {
         });
     };
 
+    static async changeStatus(req: Request, res: Response) {
+        const pedidoId = req.params.id as string;
+        const status = req.body.status;
+
+        await new OrderService().changeStatus(pedidoId, status);
+
+        res.status(204).end();
+    };
+
     static async search(req: Request, res: Response) {
         const orders = await new OrderService().search(req.query as QueryParamsOrder);
         res.send(orders);
