@@ -22,4 +22,8 @@ export class OrdersController {
         const items = await new OrderService().getItems(req.params.id as string);
         res.send(items)
     };
+
+    static async getById(req: Request, res: Response) {
+        res.send(await new OrderService().getById(req.params.id as string))
+    }
 }

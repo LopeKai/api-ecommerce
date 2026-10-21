@@ -59,4 +59,8 @@ export class OrderService {
         return await this.orderRepository.getItems(pedidoId);
     }
 
+    async getById(pedidoId: string): Promise<Order> {
+        return await this.orderRepository.getById(pedidoId);
+    }
+
 }
