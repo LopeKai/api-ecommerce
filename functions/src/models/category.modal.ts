@@ -6,7 +6,7 @@ export class Category {
     descricao: string;
     ativa: boolean
 
-    constructor(data: Category | any = {}) {
+    constructor(data: Category | DocumentData = {}) {
         this.id = data?.id;
         this.descricao = data?.descricao;
         this.ativa = data?.ativa

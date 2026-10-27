@@ -32,7 +32,7 @@ export class UsersController {
     };
 
     static async delete(req: Request, res: Response) {
-        let userId = req.params.id;
+        const userId = req.params.id;
         await new UserService().delete(userId as string);
         res.status(204).end()
     };

@@ -5,6 +5,7 @@ import { routes } from './routes/index.js';
 import { errorHandler } from './middlewares/error-handle.middleware.js';
 import { PageNotFoundHandler } from './middlewares/page-not-found.middleware.js';
 import { auth } from './middlewares/auth.middleware.js';
+import { onRequest } from 'firebase-functions/v2/https';
 
 initializeAppAdminApp();
 initializeFirebaseApp({
@@ -17,7 +18,5 @@ routes(app);
 PageNotFoundHandler(app);
 errorHandler(app);
 
-app.listen(3000, () => {
-    console.log('Servidor na PORTA 3000')
-});
+export const api = onRequest(app);
 

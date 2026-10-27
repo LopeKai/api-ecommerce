@@ -21,7 +21,7 @@ export class Order {
     subtotal: number;
     total: number;
 
-    constructor(data: any) {
+    constructor(data: DocumentData) {
         this.id = data.id;
         this.empresa = new Company(data.empresa);
         this.cliente = data.cliente;
@@ -35,7 +35,7 @@ export class Order {
         this.isEntrega = data.isEntrega;
         this.formaPagamento = new PaymentMethod(data.formaPagamento);
         this.taxaEntrega = data.taxaEntrega;
-        this.items = data.items?.map((item: any) => new OrderItem(item));
+        this.items = data.items?.map((item: DocumentData) => new OrderItem(item));
         this.status = data.status ?? OrderStatus.pendente;
         this.subtotal = data.subtotal;
         this.total = data.total;

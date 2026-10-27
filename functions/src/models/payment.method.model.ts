@@ -6,7 +6,7 @@ export class PaymentMethod {
     descricao: string;
     ativa: boolean;
 
-    constructor(data: PaymentMethod | any) {
+    constructor(data: PaymentMethod | DocumentData) {
         this.id = data.id;
         this.descricao = data.descricao;
         this.ativa = data.ativa;

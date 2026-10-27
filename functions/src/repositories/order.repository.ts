@@ -20,7 +20,7 @@ export class OrderRepository {
 
         // itens do pedido
         const itemsRef = orderRef.collection("items").withConverter(orderItemConverter);
-        for (let item of order.items!) {
+        for (const item of order.items!) {
             batch.create(itemsRef.doc(), item);
         };
 
@@ -70,7 +70,7 @@ export class OrderRepository {
             return new Order({
                 id: doc.id,
                 ...doc.data()
-            } as unknown)
+            })
         })
     };
 

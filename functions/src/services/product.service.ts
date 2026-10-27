@@ -55,7 +55,7 @@ export class ProductService {
         await this.productRepository.delete(id)
     }
 
-    private async getCategoriaById(id: String) {
+    private async getCategoriaById(id: string) {
         const categoria = await this.categoryRepository.getById(id as string);
 
         if (!categoria) {

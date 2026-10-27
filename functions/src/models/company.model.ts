@@ -14,7 +14,7 @@ export class Company {
     taxaEntrega: string;
     ativa: boolean;
 
-    constructor(data: Company | any) {
+    constructor(data: Company | DocumentData) {
         this.id = data?.id;
         this.logomarca = data?.logomarca;
         this.cpfCnpj = data?.cpfCnpj;

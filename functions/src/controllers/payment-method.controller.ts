@@ -8,7 +8,7 @@ export class PaymentMethodControler {
     };
 
     static async getById(req: Request, res: Response) {
-        let paymentMethodId = req.params.id;
+        const paymentMethodId = req.params.id;
         res.send(await new PaymentMethodService().getBydId(paymentMethodId as string));
     };
 

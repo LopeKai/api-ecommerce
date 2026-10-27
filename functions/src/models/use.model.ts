@@ -7,10 +7,10 @@ export class User {
     email: string;
     password?: string;
 
-    constructor(data: User | any) {
-        this.id = data.i;
-        this.nome = data.nom;
-        this.email = data.emai;
+    constructor(data: User | DocumentData) {
+        this.id = data.id;
+        this.nome = data.nome;
+        this.email = data.email;
         this.password = data.password;
     }
 };

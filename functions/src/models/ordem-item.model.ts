@@ -8,7 +8,7 @@ export class OrderItem {
     qtde: number;
     observacao: string;
 
-    constructor(data: OrderItem | any) {
+    constructor(data: OrderItem | DocumentData) {
         this.id = data.id;
         this.produto = new Product(data.produto);
         this.qtde = data.qtde;

@@ -6,10 +6,11 @@ import { ErrorBase } from '../errors/base.error.js';
 export const errorHandler = (app: express.Express) => {
     app.use(errors()); // error calebrete schema
 
-    app.use((error: Error, req: Request, res: Response, next: NextFunction) => {
+    app.use((error: Error, _req: Request, res: Response, _next: NextFunction) => {
         if (error instanceof ErrorBase) {
             error.send(res)
         } else {
+            console.error(error);
             new InternalServerError().send(res)
         }
     }); // quando eu estou fazendo um middlaware para capturar erro. se a funcao tem 4 paramentro, o express ja entende que se trata de um middlaware para caputar erro.

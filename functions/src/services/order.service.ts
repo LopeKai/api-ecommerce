@@ -36,7 +36,7 @@ export class OrderService {
 
         order.formaPagamento = paymentMethod;
 
-        for (let item of order.items!) {
+        for (const item of order.items!) {
             const product = await this.productRepository.getById(item.produto.id);
 
             if (!product) {

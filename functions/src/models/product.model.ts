@@ -11,7 +11,7 @@ export class Product {
     categoria: Category;
     ativa: boolean;
 
-    constructor(data: Product | any) {
+    constructor(data: Product | DocumentData) {
         this.id = data.id;
         this.nome = data.nome;
         this.descricao = data.descricao;
