@@ -1,5 +1,6 @@
 import { Joi } from "celebrate";
 import { DocumentData, FirestoreDataConverter, QueryDocumentSnapshot } from "firebase-admin/firestore";
+import { joiValidator } from 'cpf-cnpj-validator/joi'
 
 export class Company {
     id?: string;
@@ -29,13 +30,18 @@ export class Company {
     }
 };
 
+const cpfCnpjValidator = Joi.extend(joiValidator);
+const cpfCnpjSchemaValidator = Joi.alternatives().try(
+    cpfCnpjValidator.document().cpf(),
+    cpfCnpjValidator.document().cnpj(),
+).required().messages({
+    "alternatives.match": "CPF ou CNPJ inválidos!"
+});
+
 export const newCompanySchema = Joi.object().keys({
     // logomarca: Joi.string().allow(null).base64(),
     logomarca: Joi.string().allow(null),
-    cpfCnpj: Joi.alternatives().try(
-        Joi.string().length(11).required(),
-        Joi.string().length(14).required(),
-    ),
+    cpfCnpj: cpfCnpjSchemaValidator,
     razaoSocial: Joi.string().required(),
     nomeFantasia: Joi.string().required(),
     telefone: Joi.string().regex(/(^[1-9]{1}[0-9]{1}[0-9]{8}$)|(^[1-9]{1}[0-9]{1}[9]{1}[0-9]{8}$)/).required(),
@@ -48,10 +54,7 @@ export const newCompanySchema = Joi.object().keys({
 
 export const updateCompanySchema = Joi.object().keys({
     logomarca: Joi.string().allow(null),
-    cpfCnpj: Joi.alternatives().try(
-        Joi.string().length(11).required(),
-        Joi.string().length(14).required(),
-    ).required(),
+    cpfCnpj: cpfCnpjSchemaValidator,
     razaoSocial: Joi.string().required(),
     nomeFantasia: Joi.string().required(),
     telefone: Joi.string().regex(/(^[1-9]{1}[0-9]{1}[0-9]{8}$)|(^[1-9]{1}[0-9]{1}[9]{1}[0-9]{8}$)/).required(),

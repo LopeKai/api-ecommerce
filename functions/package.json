@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "celebrate": "^16.0.0",
+    "cpf-cnpj-validator": "^2.1.2",
     "dayjs": "^1.11.23",
     "express": "^5.2.1",
     "express-async-handler": "^1.2.0",

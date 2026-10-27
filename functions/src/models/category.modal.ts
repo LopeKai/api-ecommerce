@@ -1,5 +1,5 @@
 import { DocumentData, FirestoreDataConverter, QueryDocumentSnapshot } from "firebase-admin/firestore";
-import Joi from "joi";
+import { Joi } from "celebrate";
 
 export class Category {
     id: string;

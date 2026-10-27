@@ -29,7 +29,10 @@ export const updateUserSchema = Joi.object().keys({
 
 export const authLoginSchema = Joi.object().keys({
     email: Joi.string().email().required(),
-    password: Joi.string().min(6).required(),
+    password: Joi.string().min(6).required().messages({
+        "any.required": "A senha é obrigatória",
+        "string.min": "A senha precisa ter pelo menos 6 caracteres",
+    })
 });
 
 export const authRecoverySchema = Joi.object().keys({
