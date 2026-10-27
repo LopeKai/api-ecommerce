@@ -1,41 +1,33 @@
-[debug] [2026-10-27T00:43:10.561Z] ----------------------------------------------------------------------
-[debug] [2026-10-27T00:43:10.564Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kaiqu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
-[debug] [2026-10-27T00:43:10.564Z] CLI Version:   15.34.1
-[debug] [2026-10-27T00:43:10.564Z] Platform:      win32
-[debug] [2026-10-27T00:43:10.564Z] Node Version:  v24.14.0
-[debug] [2026-10-27T00:43:10.564Z] Detected Agent: unknown
-[debug] [2026-10-27T00:43:10.565Z] Time:          Mon Oct 26 2026 21:43:10 GMT-0300 (Horário Padrão de Brasília)
-[debug] [2026-10-27T00:43:10.565Z] ----------------------------------------------------------------------
+[debug] [2026-10-27T21:38:53.078Z] ----------------------------------------------------------------------
+[debug] [2026-10-27T21:38:53.080Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kaiqu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2026-10-27T21:38:53.080Z] CLI Version:   15.34.1
+[debug] [2026-10-27T21:38:53.080Z] Platform:      win32
+[debug] [2026-10-27T21:38:53.080Z] Node Version:  v24.14.0
+[debug] [2026-10-27T21:38:53.080Z] Detected Agent: unknown
+[debug] [2026-10-27T21:38:53.080Z] Time:          Tue Oct 27 2026 18:38:53 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2026-10-27T21:38:53.080Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2026-10-27T00:43:10.590Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2026-10-27T00:43:12.957Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2026-10-27T00:43:12.958Z] > authorizing via signed-in user (kaiquearaujo246@gmail.com)
+[debug] [2026-10-27T21:38:54.047Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-10-27T21:38:54.047Z] > authorizing via signed-in user (kaiquearaujo246@gmail.com)
 [info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
-[debug] [2026-10-27T00:43:12.968Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2026-10-27T00:43:12.968Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
-[debug] [2026-10-27T00:43:12.975Z] Write emulator hub locator at C:\Users\Kaiqu\AppData\Local\Temp\hub-ecommerce-api-two.json
-[debug] [2026-10-27T00:43:13.022Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2026-10-27T00:43:13.022Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2026-10-27T00:43:13.022Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2026-10-27T00:43:13.022Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[debug] [2026-10-27T21:38:54.056Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-10-27T21:38:54.056Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2026-10-27T21:38:54.061Z] Write emulator hub locator at C:\Users\Kaiqu\AppData\Local\Temp\hub-ecommerce-api-two.json
+[debug] [2026-10-27T21:38:54.077Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-10-27T21:38:54.077Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-10-27T21:38:54.077Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-10-27T21:38:54.077Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
 [warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
-[debug] [2026-10-27T00:43:13.090Z] defaultcredentials: writing to file C:\Users\Kaiqu\AppData\Roaming\firebase\kaiquearaujo246_gmail_com_application_default_credentials.json
-[debug] [2026-10-27T00:43:13.095Z] Setting GAC to C:\Users\Kaiqu\AppData\Roaming\firebase\kaiquearaujo246_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Kaiqu\\AppData\\Roaming\\firebase\\kaiquearaujo246_gmail_com_application_default_credentials.json"}}
-[debug] [2026-10-27T00:43:13.101Z] Checked if tokens are valid: false, expires at: 1793062226424
-[debug] [2026-10-27T00:43:13.102Z] Checked if tokens are valid: false, expires at: 1793062226424
-[debug] [2026-10-27T00:43:13.147Z] > refreshing access token with scopes: []
-[debug] [2026-10-27T00:43:13.173Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
-[debug] [2026-10-27T00:43:13.173Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2026-10-27T00:43:13.488Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
-[debug] [2026-10-27T00:43:13.488Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2026-10-27T00:43:13.510Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-api-two/adminSdkConfig [none]
-[debug] [2026-10-27T00:43:13.518Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
-[debug] [2026-10-27T00:43:13.519Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
-[debug] [2026-10-27T00:43:13.976Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-api-two/adminSdkConfig 200
-[debug] [2026-10-27T00:43:13.977Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-api-two/adminSdkConfig {"projectId":"ecommerce-api-two","storageBucket":"ecommerce-api-two.firebasestorage.app"}
+[debug] [2026-10-27T21:38:54.102Z] defaultcredentials: writing to file C:\Users\Kaiqu\AppData\Roaming\firebase\kaiquearaujo246_gmail_com_application_default_credentials.json
+[debug] [2026-10-27T21:38:54.105Z] Setting GAC to C:\Users\Kaiqu\AppData\Roaming\firebase\kaiquearaujo246_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Kaiqu\\AppData\\Roaming\\firebase\\kaiquearaujo246_gmail_com_application_default_credentials.json"}}
+[debug] [2026-10-27T21:38:54.106Z] Checked if tokens are valid: true, expires at: 1793140349705
+[debug] [2026-10-27T21:38:54.107Z] Checked if tokens are valid: true, expires at: 1793140349705
+[debug] [2026-10-27T21:38:54.108Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-api-two/adminSdkConfig [none]
+[debug] [2026-10-27T21:38:54.546Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-api-two/adminSdkConfig 200
+[debug] [2026-10-27T21:38:54.546Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-api-two/adminSdkConfig {"projectId":"ecommerce-api-two","storageBucket":"ecommerce-api-two.firebasestorage.app"}
 [info] i  functions: Watching "C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\" for Cloud Functions..."}}
-[debug] [2026-10-27T00:43:14.022Z] Validating nodejs source
-[debug] [2026-10-27T00:43:15.663Z] > [functions] package.json contents: {
+[debug] [2026-10-27T21:38:54.577Z] Validating nodejs source
+[debug] [2026-10-27T21:38:55.573Z] > [functions] package.json contents: {
   "name": "functions",
   "version": "1.0.0",
   "main": "./lib/index.js",
@@ -67,23 +59,24 @@
     "@types/express": "^5.0.6",
     "@types/node": "^26.4.1",
     "eslint": "^10.13.0",
+    "swagger-autogen": "^2.23.7",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.72.1"
   },
   "private": true
 }
-[debug] [2026-10-27T00:43:15.664Z] Building nodejs source
-[debug] [2026-10-27T00:43:15.664Z] Failed to find version of module node: reached end of search path C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\node_modules
+[debug] [2026-10-27T21:38:55.573Z] Building nodejs source
+[debug] [2026-10-27T21:38:55.574Z] Failed to find version of module node: reached end of search path C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\node_modules
 [info] +  functions: Using node@24 from host. 
 [info] i  functions: Loaded environment variables from functions\.env 
-[debug] [2026-10-27T00:43:15.668Z] Could not find functions.yaml. Must use http discovery
-[debug] [2026-10-27T00:43:15.675Z] Found firebase-functions binary at 'C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\node_modules\.bin\firebase-functions'
-[info] Serving at port 8437
+[debug] [2026-10-27T21:38:55.578Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-10-27T21:38:55.584Z] Found firebase-functions binary at 'C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8149
 
-[debug] [2026-10-27T00:43:17.704Z] Got response from /__/functions.yaml {"specVersion":"v1alpha1","endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"extensions":{},"requiredAPIs":[]}
+[debug] [2026-10-27T21:38:56.753Z] Got response from /__/functions.yaml {"specVersion":"v1alpha1","endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"extensions":{},"requiredAPIs":[]}
 [info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
 [info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/ecommerce-api-two/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/ecommerce-api-two/us-central1/api)."}}
-[debug] [2026-10-27T00:43:20.761Z] Could not find VSCode notification endpoint: TypeError: fetch failed. If you are not running the Firebase SQL Connect VSCode extension, this is expected and not an issue.
+[debug] [2026-10-27T21:38:59.794Z] Could not find VSCode notification endpoint: TypeError: fetch failed. If you are not running the Firebase SQL Connect VSCode extension, this is expected and not an issue.
 [info] 
 ┌─────────────────────────────────────────────────────────────┐
 │ ✔  All emulators ready! It is now safe to connect your app. │
@@ -100,54 +93,37 @@
 
 Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
  
-[debug] [2026-10-27T00:43:24.775Z] [work-queue] {"queuedWork":["/ecommerce-api-two/us-central1/api/auth/login-2026-10-27T00:43:24.775Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2026-10-27T00:43:24.776Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/ecommerce-api-two/us-central1/api/auth/login-2026-10-27T00:43:24.775Z"],"workRunningCount":1}
-[debug] [2026-10-27T00:43:24.776Z] Accepted request POST /ecommerce-api-two/us-central1/api/auth/login --> us-central1-api
-[debug] [2026-10-27T00:43:24.778Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2026-10-27T00:43:24.779Z] [functions] Got req.url=/ecommerce-api-two/us-central1/api/auth/login, mapping to path=/auth/login {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/ecommerce-api-two/us-central1/api/auth/login, mapping to path=/auth/login"}}
+[debug] [2026-10-27T21:39:07.408Z] [work-queue] {"queuedWork":["/ecommerce-api-two/us-central1/api/auth/login-2026-10-27T21:39:07.408Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-10-27T21:39:07.408Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/ecommerce-api-two/us-central1/api/auth/login-2026-10-27T21:39:07.408Z"],"workRunningCount":1}
+[debug] [2026-10-27T21:39:07.408Z] Accepted request POST /ecommerce-api-two/us-central1/api/auth/login --> us-central1-api
+[debug] [2026-10-27T21:39:07.410Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-10-27T21:39:07.411Z] [functions] Got req.url=/ecommerce-api-two/us-central1/api/auth/login, mapping to path=/auth/login {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/ecommerce-api-two/us-central1/api/auth/login, mapping to path=/auth/login"}}
 [info] i  functions: Loaded environment variables from functions\.env 
-[debug] [2026-10-27T00:43:24.799Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
-[debug] [2026-10-27T00:43:24.800Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
-[debug] [2026-10-27T00:43:26.448Z] [runtime-status] [10484] Resolved module firebase-admin {"declared":true,"installed":true,"version":"14.5.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10484] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"14.5.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
-[debug] [2026-10-27T00:43:26.449Z] [runtime-status] [10484] Resolved module firebase-functions {"declared":true,"installed":true,"version":"7.4.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10484] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"7.4.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
-[debug] [2026-10-27T00:43:26.449Z] [runtime-status] [10484] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10484] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
-[debug] [2026-10-27T00:43:26.451Z] [runtime-status] [10484] Resolved module firebase-functions {"declared":true,"installed":true,"version":"7.4.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10484] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"7.4.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
-[debug] [2026-10-27T00:43:26.451Z] [runtime-status] [10484] Detected firebase-functions v7+, skipping legacy stubs. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10484] Detected firebase-functions v7+, skipping legacy stubs."}}
-[debug] [2026-10-27T00:43:26.452Z] [runtime-status] [10484] Resolved module firebase-admin {"declared":true,"installed":true,"version":"14.5.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10484] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"14.5.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
-[debug] [2026-10-27T00:43:26.523Z] [runtime-status] [10484] Resolved module firebase-functions {"declared":true,"installed":true,"version":"7.4.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10484] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"7.4.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
-[debug] [2026-10-27T00:43:27.225Z] [runtime-status] [10484] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"14.5.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10484] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"14.5.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
-[debug] [2026-10-27T00:43:27.803Z] [runtime-status] [10484] Functions runtime initialized. {"cwd":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions","node_version":"24.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10484] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\",\"node_version\":\"24.14.0\"}"}}
-[debug] [2026-10-27T00:43:27.803Z] [runtime-status] [10484] Listening to port: \\?\pipe\fire_emu_281e4327a2620be1 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10484] Listening to port: \\\\?\\pipe\\fire_emu_281e4327a2620be1"}}
-[debug] [2026-10-27T00:43:27.852Z] [worker-us-central1-api-d52627f3-60e6-4e63-981c-b3a04e9d40f6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-d52627f3-60e6-4e63-981c-b3a04e9d40f6]: IDLE"}}
-[debug] [2026-10-27T00:43:27.852Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2026-10-27T21:39:07.430Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2026-10-27T21:39:07.431Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2026-10-27T21:39:09.003Z] [runtime-status] [33852] Resolved module firebase-admin {"declared":true,"installed":true,"version":"14.5.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [33852] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"14.5.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2026-10-27T21:39:09.004Z] [runtime-status] [33852] Resolved module firebase-functions {"declared":true,"installed":true,"version":"7.4.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [33852] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"7.4.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2026-10-27T21:39:09.005Z] [runtime-status] [33852] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [33852] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2026-10-27T21:39:09.005Z] [runtime-status] [33852] Resolved module firebase-functions {"declared":true,"installed":true,"version":"7.4.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [33852] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"7.4.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2026-10-27T21:39:09.006Z] [runtime-status] [33852] Detected firebase-functions v7+, skipping legacy stubs. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [33852] Detected firebase-functions v7+, skipping legacy stubs."}}
+[debug] [2026-10-27T21:39:09.006Z] [runtime-status] [33852] Resolved module firebase-admin {"declared":true,"installed":true,"version":"14.5.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [33852] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"14.5.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2026-10-27T21:39:09.105Z] [runtime-status] [33852] Resolved module firebase-functions {"declared":true,"installed":true,"version":"7.4.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [33852] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"7.4.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2026-10-27T21:39:11.646Z] [runtime-status] [33852] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"14.5.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [33852] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"14.5.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2026-10-27T21:39:12.455Z] [runtime-status] [33852] Functions runtime initialized. {"cwd":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions","node_version":"24.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [33852] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\",\"node_version\":\"24.14.0\"}"}}
+[debug] [2026-10-27T21:39:12.458Z] [runtime-status] [33852] Listening to port: \\?\pipe\fire_emu_60c38b2dcfbc962d {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [33852] Listening to port: \\\\?\\pipe\\fire_emu_60c38b2dcfbc962d"}}
+[debug] [2026-10-27T21:39:12.555Z] [worker-us-central1-api-7c2ed38c-d25f-4502-91c4-ec7c414ce69c]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-7c2ed38c-d25f-4502-91c4-ec7c414ce69c]: IDLE"}}
+[debug] [2026-10-27T21:39:12.555Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
 [info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
-[debug] [2026-10-27T00:43:27.853Z] [worker-us-central1-api-d52627f3-60e6-4e63-981c-b3a04e9d40f6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-d52627f3-60e6-4e63-981c-b3a04e9d40f6]: BUSY"}}
-[debug] [2026-10-27T00:43:29.075Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
-[info] i  functions: Finished "us-central1-api" in 1222.0489ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 1222.0489ms"}}
-[debug] [2026-10-27T00:43:29.076Z] [worker-us-central1-api-d52627f3-60e6-4e63-981c-b3a04e9d40f6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-d52627f3-60e6-4e63-981c-b3a04e9d40f6]: IDLE"}}
-[debug] [2026-10-27T00:43:29.077Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
-[debug] [2026-10-27T00:43:29.077Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
-[debug] [2026-10-27T00:43:29.077Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[debug] [2026-10-27T00:44:58.435Z] [work-queue] {"queuedWork":["/ecommerce-api-two/us-central1/api/companies-2026-10-27T00:44:58.435Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2026-10-27T00:44:58.435Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/ecommerce-api-two/us-central1/api/companies-2026-10-27T00:44:58.435Z"],"workRunningCount":1}
-[debug] [2026-10-27T00:44:58.435Z] Accepted request POST /ecommerce-api-two/us-central1/api/companies --> us-central1-api
-[debug] [2026-10-27T00:44:58.438Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2026-10-27T00:44:58.438Z] [functions] Got req.url=/ecommerce-api-two/us-central1/api/companies, mapping to path=/companies {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/ecommerce-api-two/us-central1/api/companies, mapping to path=/companies"}}
-[debug] [2026-10-27T00:44:58.438Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
-[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
-[debug] [2026-10-27T00:44:58.438Z] [worker-us-central1-api-d52627f3-60e6-4e63-981c-b3a04e9d40f6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-d52627f3-60e6-4e63-981c-b3a04e9d40f6]: BUSY"}}
-[warn] !  Google API requested!
-   - URL: "https://oauth2.googleapis.com/token"
-   - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Google API requested!\n   - URL: \"https://oauth2.googleapis.com/token\"\n   - Be careful, this may be a production service."}}
-[debug] [2026-10-27T00:44:59.828Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
-[info] i  functions: Finished "us-central1-api" in 1390.2795ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 1390.2795ms"}}
-[debug] [2026-10-27T00:44:59.829Z] [worker-us-central1-api-d52627f3-60e6-4e63-981c-b3a04e9d40f6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-d52627f3-60e6-4e63-981c-b3a04e9d40f6]: IDLE"}}
-[debug] [2026-10-27T00:44:59.829Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
-[debug] [2026-10-27T00:44:59.829Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
-[debug] [2026-10-27T00:44:59.829Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[debug] [2026-10-27T00:47:39.893Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\src\models\company.model.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\src\\models\\company.model.ts changed, reloading triggers"}}
-[debug] [2026-10-27T00:47:40.896Z] Validating nodejs source
-[debug] [2026-10-27T00:47:42.928Z] > [functions] package.json contents: {
+[debug] [2026-10-27T21:39:12.556Z] [worker-us-central1-api-7c2ed38c-d25f-4502-91c4-ec7c414ce69c]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-7c2ed38c-d25f-4502-91c4-ec7c414ce69c]: BUSY"}}
+[debug] [2026-10-27T21:39:14.020Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 1464.3571ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 1464.3571ms"}}
+[debug] [2026-10-27T21:39:14.020Z] [worker-us-central1-api-7c2ed38c-d25f-4502-91c4-ec7c414ce69c]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-7c2ed38c-d25f-4502-91c4-ec7c414ce69c]: IDLE"}}
+[debug] [2026-10-27T21:39:14.021Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-10-27T21:39:14.021Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-10-27T21:39:14.021Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-10-27T21:44:00.554Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\swagger.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\swagger.js changed, reloading triggers"}}
+[debug] [2026-10-27T21:44:01.565Z] Validating nodejs source
+[debug] [2026-10-27T21:44:02.934Z] > [functions] package.json contents: {
   "name": "functions",
   "version": "1.0.0",
   "main": "./lib/index.js",
@@ -179,44 +155,29 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
     "@types/express": "^5.0.6",
     "@types/node": "^26.4.1",
     "eslint": "^10.13.0",
+    "swagger-autogen": "^2.23.7",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.72.1"
   },
   "private": true
 }
-[debug] [2026-10-27T00:47:42.928Z] Building nodejs source
-[debug] [2026-10-27T00:47:42.929Z] Failed to find version of module node: reached end of search path C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\node_modules
+[debug] [2026-10-27T21:44:02.935Z] Building nodejs source
+[debug] [2026-10-27T21:44:02.935Z] Failed to find version of module node: reached end of search path C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\node_modules
 [info] +  functions: Using node@24 from host. 
 [info] i  functions: Loaded environment variables from functions\.env 
-[debug] [2026-10-27T00:47:42.930Z] Could not find functions.yaml. Must use http discovery
-[debug] [2026-10-27T00:47:42.936Z] Found firebase-functions binary at 'C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\node_modules\.bin\firebase-functions'
-[info] Serving at port 8668
+[debug] [2026-10-27T21:44:02.937Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-10-27T21:44:02.945Z] Found firebase-functions binary at 'C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8600
 
-[debug] [2026-10-27T00:47:44.857Z] Got response from /__/functions.yaml {"specVersion":"v1alpha1","endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"extensions":{},"requiredAPIs":[]}
+[debug] [2026-10-27T21:44:04.903Z] Got response from /__/functions.yaml {"specVersion":"v1alpha1","endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"extensions":{},"requiredAPIs":[]}
 [info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
-[debug] [2026-10-27T00:47:47.889Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
-[debug] [2026-10-27T00:47:47.889Z] [worker-us-central1-api-d52627f3-60e6-4e63-981c-b3a04e9d40f6]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-d52627f3-60e6-4e63-981c-b3a04e9d40f6]: FINISHING"}}
-[debug] [2026-10-27T00:47:47.908Z] [worker-us-central1-api-d52627f3-60e6-4e63-981c-b3a04e9d40f6]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-d52627f3-60e6-4e63-981c-b3a04e9d40f6]: exited"}}
-[debug] [2026-10-27T00:47:47.908Z] [worker-us-central1-api-d52627f3-60e6-4e63-981c-b3a04e9d40f6]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-d52627f3-60e6-4e63-981c-b3a04e9d40f6]: FINISHED"}}
-[debug] [2026-10-27T00:48:58.235Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\src\models\company.model.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\src\\models\\company.model.ts changed, reloading triggers"}}
-[debug] [2026-10-27T00:48:58.766Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\lib\models\company.model.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\lib\\models\\company.model.js.map changed, reloading triggers"}}
-[debug] [2026-10-27T00:48:58.767Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\lib\models\company.model.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\lib\\models\\company.model.js changed, reloading triggers"}}
-[debug] [2026-10-27T00:48:58.779Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\lib\models\order.model.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\lib\\models\\order.model.js.map changed, reloading triggers"}}
-[debug] [2026-10-27T00:48:58.780Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\lib\models\order.model.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\lib\\models\\order.model.js changed, reloading triggers"}}
-[debug] [2026-10-27T00:48:58.788Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\lib\routes\companies.route.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\lib\\routes\\companies.route.js.map changed, reloading triggers"}}
-[debug] [2026-10-27T00:48:58.805Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\lib\routes\companies.route.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\lib\\routes\\companies.route.js changed, reloading triggers"}}
-[debug] [2026-10-27T00:48:58.805Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\lib\routes\index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\lib\\routes\\index.js.map changed, reloading triggers"}}
-[debug] [2026-10-27T00:48:58.827Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\lib\controllers\companies.controller.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\lib\\controllers\\companies.controller.js.map changed, reloading triggers"}}
-[debug] [2026-10-27T00:48:58.827Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\lib\routes\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\lib\\routes\\index.js changed, reloading triggers"}}
-[debug] [2026-10-27T00:48:58.827Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\lib\services\company.service.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\lib\\services\\company.service.js.map changed, reloading triggers"}}
-[debug] [2026-10-27T00:48:58.879Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\lib\repositories\company.repository.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\lib\\repositories\\company.repository.js.map changed, reloading triggers"}}
-[debug] [2026-10-27T00:48:58.879Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\lib\controllers\companies.controller.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\lib\\controllers\\companies.controller.js changed, reloading triggers"}}
-[debug] [2026-10-27T00:48:58.879Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\lib\services\company.service.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\lib\\services\\company.service.js changed, reloading triggers"}}
-[debug] [2026-10-27T00:48:58.880Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\lib\services\order.service.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\lib\\services\\order.service.js.map changed, reloading triggers"}}
-[debug] [2026-10-27T00:48:58.880Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\lib\services\order.service.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\lib\\services\\order.service.js changed, reloading triggers"}}
-[debug] [2026-10-27T00:48:58.895Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\lib\repositories\company.repository.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\lib\\repositories\\company.repository.js changed, reloading triggers"}}
-[debug] [2026-10-27T00:48:59.906Z] Validating nodejs source
-[debug] [2026-10-27T00:49:01.308Z] > [functions] package.json contents: {
+[debug] [2026-10-27T21:44:07.950Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2026-10-27T21:44:07.950Z] [worker-us-central1-api-7c2ed38c-d25f-4502-91c4-ec7c414ce69c]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-7c2ed38c-d25f-4502-91c4-ec7c414ce69c]: FINISHING"}}
+[debug] [2026-10-27T21:44:07.965Z] [worker-us-central1-api-7c2ed38c-d25f-4502-91c4-ec7c414ce69c]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-7c2ed38c-d25f-4502-91c4-ec7c414ce69c]: exited"}}
+[debug] [2026-10-27T21:44:07.965Z] [worker-us-central1-api-7c2ed38c-d25f-4502-91c4-ec7c414ce69c]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-7c2ed38c-d25f-4502-91c4-ec7c414ce69c]: FINISHED"}}
+[debug] [2026-10-27T21:44:45.602Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\swagger.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\swagger.js changed, reloading triggers"}}
+[debug] [2026-10-27T21:44:46.612Z] Validating nodejs source
+[debug] [2026-10-27T21:44:48.799Z] > [functions] package.json contents: {
   "name": "functions",
   "version": "1.0.0",
   "main": "./lib/index.js",
@@ -248,173 +209,25 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
     "@types/express": "^5.0.6",
     "@types/node": "^26.4.1",
     "eslint": "^10.13.0",
+    "swagger-autogen": "^2.23.7",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.72.1"
   },
   "private": true
 }
-[debug] [2026-10-27T00:49:01.309Z] Building nodejs source
-[debug] [2026-10-27T00:49:01.309Z] Failed to find version of module node: reached end of search path C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\node_modules
+[debug] [2026-10-27T21:44:48.800Z] Building nodejs source
+[debug] [2026-10-27T21:44:48.800Z] Failed to find version of module node: reached end of search path C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\node_modules
 [info] +  functions: Using node@24 from host. 
 [info] i  functions: Loaded environment variables from functions\.env 
-[debug] [2026-10-27T00:49:01.312Z] Could not find functions.yaml. Must use http discovery
-[debug] [2026-10-27T00:49:01.322Z] Found firebase-functions binary at 'C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\node_modules\.bin\firebase-functions'
-[info] Serving at port 8057
+[debug] [2026-10-27T21:44:48.802Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-10-27T21:44:48.815Z] Found firebase-functions binary at 'C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8162
 
-[error] TypeError: cpfCnpjValidator.cpf is not a function
-    at file:///C:/Users/Kaiqu/Documents/www/node_udemy/ecommerce-api-version-two/functions/lib/models/company.model.js:34:54
-    at ModuleJobSync.runSync (node:internal/modules/esm/module_job:534:37)
-    at ModuleLoader.importSyncForRequire (node:internal/modules/esm/loader:388:47)
-    at loadESMFromCJS (node:internal/modules/cjs/loader:1629:24)
-    at Module._compile (node:internal/modules/cjs/loader:1794:5)
-    at Object..js (node:internal/modules/cjs/loader:1943:10)
-    at Module.load (node:internal/modules/cjs/loader:1533:32)
-    at Module._load (node:internal/modules/cjs/loader:1335:12)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
-    at Module.require (node:internal/modules/cjs/loader:1556:12)
-
-[debug] [2026-10-27T00:49:03.677Z] Got response code 400; body Failed to generate manifest from function source: cpfCnpjValidator.cpf is not a function
-[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
-[debug] [2026-10-27T00:49:12.508Z] [work-queue] {"queuedWork":["/ecommerce-api-two/us-central1/api/companies-2026-10-27T00:49:12.508Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2026-10-27T00:49:12.509Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/ecommerce-api-two/us-central1/api/companies-2026-10-27T00:49:12.508Z"],"workRunningCount":1}
-[debug] [2026-10-27T00:49:12.509Z] Accepted request POST /ecommerce-api-two/us-central1/api/companies --> us-central1-api
-[debug] [2026-10-27T00:49:12.511Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2026-10-27T00:49:12.512Z] [functions] Got req.url=/ecommerce-api-two/us-central1/api/companies, mapping to path=/companies {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/ecommerce-api-two/us-central1/api/companies, mapping to path=/companies"}}
-[debug] [2026-10-27T00:49:12.512Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
-[info] i  functions: Loaded environment variables from functions\.env 
-[debug] [2026-10-27T00:49:12.528Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
-[debug] [2026-10-27T00:49:12.529Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
-[debug] [2026-10-27T00:49:15.078Z] [runtime-status] [17392] Resolved module firebase-admin {"declared":true,"installed":true,"version":"14.5.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [17392] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"14.5.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
-[debug] [2026-10-27T00:49:15.081Z] [runtime-status] [17392] Resolved module firebase-functions {"declared":true,"installed":true,"version":"7.4.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [17392] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"7.4.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
-[debug] [2026-10-27T00:49:15.081Z] [runtime-status] [17392] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [17392] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
-[debug] [2026-10-27T00:49:15.082Z] [runtime-status] [17392] Resolved module firebase-functions {"declared":true,"installed":true,"version":"7.4.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [17392] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"7.4.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
-[debug] [2026-10-27T00:49:15.082Z] [runtime-status] [17392] Detected firebase-functions v7+, skipping legacy stubs. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [17392] Detected firebase-functions v7+, skipping legacy stubs."}}
-[debug] [2026-10-27T00:49:15.084Z] [runtime-status] [17392] Resolved module firebase-admin {"declared":true,"installed":true,"version":"14.5.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [17392] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"14.5.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
-[debug] [2026-10-27T00:49:15.215Z] [runtime-status] [17392] Resolved module firebase-functions {"declared":true,"installed":true,"version":"7.4.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [17392] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"7.4.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
-[debug] [2026-10-27T00:49:16.406Z] [runtime-status] [17392] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"14.5.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [17392] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"14.5.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
-[warn] !  functions: Failed to initialize and load triggers. This shouldn't happen: cpfCnpjValidator.cpf is not a function {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Failed to initialize and load triggers. This shouldn't happen: cpfCnpjValidator.cpf is not a function"}}
-[warn] !  Your function was killed because it raised an unhandled error. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Your function was killed because it raised an unhandled error."}}
-[debug] [2026-10-27T00:49:17.413Z] [worker-us-central1-api-cafe9014-b9d6-4ebd-8704-9fec427fec99]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-cafe9014-b9d6-4ebd-8704-9fec427fec99]: exited"}}
-[debug] [2026-10-27T00:49:17.416Z] [worker-us-central1-api-cafe9014-b9d6-4ebd-8704-9fec427fec99]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-cafe9014-b9d6-4ebd-8704-9fec427fec99]: FINISHED"}}
-[error] !!  functions: Failed to handle request for function us-central1-api {"metadata":{"emulator":{"name":"functions"},"message":"Failed to handle request for function us-central1-api"}}
-[error] !!  functions: Failed to start functions in C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions: Failed to load function. {"metadata":{"emulator":{"name":"functions"},"message":"Failed to start functions in C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions: Failed to load function."}}
-[debug] [2026-10-27T00:49:42.580Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[debug] [2026-10-27T00:49:44.638Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\src\models\company.model.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\src\\models\\company.model.ts changed, reloading triggers"}}
-[debug] [2026-10-27T00:49:44.938Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\lib\models\company.model.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\lib\\models\\company.model.js.map changed, reloading triggers"}}
-[debug] [2026-10-27T00:49:44.939Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\lib\models\company.model.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\lib\\models\\company.model.js changed, reloading triggers"}}
-[debug] [2026-10-27T00:49:45.949Z] Validating nodejs source
-[debug] [2026-10-27T00:49:47.295Z] > [functions] package.json contents: {
-  "name": "functions",
-  "version": "1.0.0",
-  "main": "./lib/index.js",
-  "type": "module",
-  "scripts": {
-    "lint": "npx eslint .",
-    "build": "tsc",
-    "build:watch": "tsc --watch",
-    "start": "firebase emulators:start --only functions",
-    "deploy": "npm run lint && npm run build && firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "24"
-  },
-  "dependencies": {
-    "celebrate": "^16.0.0",
-    "cpf-cnpj-validator": "^2.1.2",
-    "dayjs": "^1.11.23",
-    "express": "^5.2.1",
-    "express-async-handler": "^1.2.0",
-    "file-type": "^22.1.1",
-    "firebase": "^12.19.0",
-    "firebase-admin": "^14.3.0",
-    "firebase-functions": "^7.0.0"
-  },
-  "devDependencies": {
-    "@eslint/js": "^10.0.1",
-    "@types/express": "^5.0.6",
-    "@types/node": "^26.4.1",
-    "eslint": "^10.13.0",
-    "typescript": "^6.0.3",
-    "typescript-eslint": "^8.72.1"
-  },
-  "private": true
-}
-[debug] [2026-10-27T00:49:47.295Z] Building nodejs source
-[debug] [2026-10-27T00:49:47.295Z] Failed to find version of module node: reached end of search path C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\node_modules
-[info] +  functions: Using node@24 from host. 
-[info] i  functions: Loaded environment variables from functions\.env 
-[debug] [2026-10-27T00:49:47.309Z] Could not find functions.yaml. Must use http discovery
-[debug] [2026-10-27T00:49:47.326Z] Found firebase-functions binary at 'C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\node_modules\.bin\firebase-functions'
-[info] Serving at port 8029
-
-[debug] [2026-10-27T00:49:49.010Z] Got response from /__/functions.yaml {"specVersion":"v1alpha1","endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"extensions":{},"requiredAPIs":[]}
+[debug] [2026-10-27T21:44:50.521Z] Got response from /__/functions.yaml {"specVersion":"v1alpha1","endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"extensions":{},"requiredAPIs":[]}
 [info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
-[debug] [2026-10-27T00:50:59.367Z] [work-queue] {"queuedWork":["/ecommerce-api-two/us-central1/api/companies-2026-10-27T00:50:59.367Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2026-10-27T00:50:59.367Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/ecommerce-api-two/us-central1/api/companies-2026-10-27T00:50:59.367Z"],"workRunningCount":1}
-[debug] [2026-10-27T00:50:59.367Z] Accepted request POST /ecommerce-api-two/us-central1/api/companies --> us-central1-api
-[debug] [2026-10-27T00:50:59.369Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2026-10-27T00:50:59.369Z] [functions] Got req.url=/ecommerce-api-two/us-central1/api/companies, mapping to path=/companies {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/ecommerce-api-two/us-central1/api/companies, mapping to path=/companies"}}
-[debug] [2026-10-27T00:50:59.369Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
-[info] i  functions: Loaded environment variables from functions\.env 
-[debug] [2026-10-27T00:50:59.389Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
-[debug] [2026-10-27T00:50:59.389Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
-[debug] [2026-10-27T00:51:05.564Z] [runtime-status] [2712] Resolved module firebase-admin {"declared":true,"installed":true,"version":"14.5.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2712] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"14.5.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
-[debug] [2026-10-27T00:51:05.661Z] [runtime-status] [2712] Resolved module firebase-functions {"declared":true,"installed":true,"version":"7.4.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2712] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"7.4.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
-[debug] [2026-10-27T00:51:05.662Z] [runtime-status] [2712] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2712] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
-[debug] [2026-10-27T00:51:05.664Z] [runtime-status] [2712] Resolved module firebase-functions {"declared":true,"installed":true,"version":"7.4.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2712] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"7.4.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
-[debug] [2026-10-27T00:51:05.665Z] [runtime-status] [2712] Detected firebase-functions v7+, skipping legacy stubs. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2712] Detected firebase-functions v7+, skipping legacy stubs."}}
-[debug] [2026-10-27T00:51:05.668Z] [runtime-status] [2712] Resolved module firebase-admin {"declared":true,"installed":true,"version":"14.5.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2712] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"14.5.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
-[debug] [2026-10-27T00:51:06.006Z] [runtime-status] [2712] Resolved module firebase-functions {"declared":true,"installed":true,"version":"7.4.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2712] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"7.4.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
-[debug] [2026-10-27T00:51:08.692Z] [runtime-status] [2712] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"14.5.0","resolution":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2712] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"14.5.0\",\"resolution\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
-[debug] [2026-10-27T00:51:10.423Z] [runtime-status] [2712] Functions runtime initialized. {"cwd":"C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions","node_version":"24.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2712] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Kaiqu\\\\Documents\\\\www\\\\node_udemy\\\\ecommerce-api-version-two\\\\functions\",\"node_version\":\"24.14.0\"}"}}
-[debug] [2026-10-27T00:51:10.425Z] [runtime-status] [2712] Listening to port: \\?\pipe\fire_emu_c29ec9021e42f37b {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2712] Listening to port: \\\\?\\pipe\\fire_emu_c29ec9021e42f37b"}}
-[debug] [2026-10-27T00:51:10.461Z] [worker-us-central1-api-f6add5ce-45e2-416c-8bb9-9831529f16fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-f6add5ce-45e2-416c-8bb9-9831529f16fa]: IDLE"}}
-[debug] [2026-10-27T00:51:10.463Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
-[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
-[debug] [2026-10-27T00:51:10.505Z] [worker-us-central1-api-f6add5ce-45e2-416c-8bb9-9831529f16fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-f6add5ce-45e2-416c-8bb9-9831529f16fa]: BUSY"}}
-[warn] !  Google API requested!
-   - URL: "https://oauth2.googleapis.com/token"
-   - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Google API requested!\n   - URL: \"https://oauth2.googleapis.com/token\"\n   - Be careful, this may be a production service."}}
-[debug] [2026-10-27T00:51:11.646Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
-[info] i  functions: Finished "us-central1-api" in 1141.2912000000001ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 1141.2912000000001ms"}}
-[debug] [2026-10-27T00:51:11.646Z] [worker-us-central1-api-f6add5ce-45e2-416c-8bb9-9831529f16fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-f6add5ce-45e2-416c-8bb9-9831529f16fa]: IDLE"}}
-[debug] [2026-10-27T00:51:11.647Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
-[debug] [2026-10-27T00:51:11.647Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
-[debug] [2026-10-27T00:51:11.647Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[debug] [2026-10-27T00:51:37.435Z] [work-queue] {"queuedWork":["/ecommerce-api-two/us-central1/api/companies-2026-10-27T00:51:37.435Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2026-10-27T00:51:37.435Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/ecommerce-api-two/us-central1/api/companies-2026-10-27T00:51:37.435Z"],"workRunningCount":1}
-[debug] [2026-10-27T00:51:37.435Z] Accepted request POST /ecommerce-api-two/us-central1/api/companies --> us-central1-api
-[debug] [2026-10-27T00:51:37.437Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2026-10-27T00:51:37.437Z] [functions] Got req.url=/ecommerce-api-two/us-central1/api/companies, mapping to path=/companies {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/ecommerce-api-two/us-central1/api/companies, mapping to path=/companies"}}
-[debug] [2026-10-27T00:51:37.438Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
-[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
-[debug] [2026-10-27T00:51:37.438Z] [worker-us-central1-api-f6add5ce-45e2-416c-8bb9-9831529f16fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-f6add5ce-45e2-416c-8bb9-9831529f16fa]: BUSY"}}
-[debug] [2026-10-27T00:51:37.562Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
-[info] i  functions: Finished "us-central1-api" in 124.3191ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 124.3191ms"}}
-[debug] [2026-10-27T00:51:37.563Z] [worker-us-central1-api-f6add5ce-45e2-416c-8bb9-9831529f16fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-f6add5ce-45e2-416c-8bb9-9831529f16fa]: IDLE"}}
-[debug] [2026-10-27T00:51:37.563Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
-[debug] [2026-10-27T00:51:37.563Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
-[debug] [2026-10-27T00:51:37.563Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[debug] [2026-10-27T00:51:42.422Z] [work-queue] {"queuedWork":["/ecommerce-api-two/us-central1/api/companies-2026-10-27T00:51:42.422Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2026-10-27T00:51:42.422Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/ecommerce-api-two/us-central1/api/companies-2026-10-27T00:51:42.422Z"],"workRunningCount":1}
-[debug] [2026-10-27T00:51:42.422Z] Accepted request POST /ecommerce-api-two/us-central1/api/companies --> us-central1-api
-[debug] [2026-10-27T00:51:42.425Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2026-10-27T00:51:42.425Z] [functions] Got req.url=/ecommerce-api-two/us-central1/api/companies, mapping to path=/companies {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/ecommerce-api-two/us-central1/api/companies, mapping to path=/companies"}}
-[debug] [2026-10-27T00:51:42.425Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
-[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
-[debug] [2026-10-27T00:51:42.427Z] [worker-us-central1-api-f6add5ce-45e2-416c-8bb9-9831529f16fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-f6add5ce-45e2-416c-8bb9-9831529f16fa]: BUSY"}}
-[debug] [2026-10-27T00:51:42.744Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
-[info] i  functions: Finished "us-central1-api" in 317.5509ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 317.5509ms"}}
-[debug] [2026-10-27T00:51:42.745Z] [worker-us-central1-api-f6add5ce-45e2-416c-8bb9-9831529f16fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-f6add5ce-45e2-416c-8bb9-9831529f16fa]: IDLE"}}
-[debug] [2026-10-27T00:51:42.745Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
-[debug] [2026-10-27T00:51:42.745Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
-[debug] [2026-10-27T00:51:42.745Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[debug] [2026-10-27T00:52:18.623Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\src\models\company.model.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\src\\models\\company.model.ts changed, reloading triggers"}}
-[debug] [2026-10-27T00:52:18.921Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\lib\models\company.model.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\lib\\models\\company.model.js.map changed, reloading triggers"}}
-[debug] [2026-10-27T00:52:18.926Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\lib\models\company.model.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\lib\\models\\company.model.js changed, reloading triggers"}}
-[debug] [2026-10-27T00:52:19.939Z] Validating nodejs source
-[debug] [2026-10-27T00:52:22.699Z] > [functions] package.json contents: {
+[debug] [2026-10-27T21:45:02.164Z] File C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Kaiqu\\Documents\\www\\node_udemy\\ecommerce-api-version-two\\functions\\package.json changed, reloading triggers"}}
+[debug] [2026-10-27T21:45:03.212Z] Validating nodejs source
+[debug] [2026-10-27T21:45:04.916Z] > [functions] package.json contents: {
   "name": "functions",
   "version": "1.0.0",
   "main": "./lib/index.js",
@@ -425,7 +238,8 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
     "build:watch": "tsc --watch",
     "start": "firebase emulators:start --only functions",
     "deploy": "npm run lint && npm run build && firebase deploy --only functions",
-    "logs": "firebase functions:log"
+    "logs": "firebase functions:log",
+    "swagger": "node ./swagger.js"
   },
   "engines": {
     "node": "24"
@@ -446,14 +260,19 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
     "@types/express": "^5.0.6",
     "@types/node": "^26.4.1",
     "eslint": "^10.13.0",
+    "swagger-autogen": "^2.23.7",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.72.1"
   },
   "private": true
 }
-[debug] [2026-10-27T00:52:22.699Z] Building nodejs source
-[debug] [2026-10-27T00:52:22.700Z] Failed to find version of module node: reached end of search path C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\node_modules
+[debug] [2026-10-27T21:45:04.916Z] Building nodejs source
+[debug] [2026-10-27T21:45:04.917Z] Failed to find version of module node: reached end of search path C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\node_modules
 [info] +  functions: Using node@24 from host. 
 [info] i  functions: Loaded environment variables from functions\.env 
-[debug] [2026-10-27T00:52:22.720Z] Could not find functions.yaml. Must use http discovery
-[debug] [2026-10-27T00:52:22.733Z] Found firebase-functions binary at 'C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\node_modules\.bin\firebase-functions'
+[debug] [2026-10-27T21:45:04.918Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-10-27T21:45:04.927Z] Found firebase-functions binary at 'C:\Users\Kaiqu\Documents\www\node_udemy\ecommerce-api-version-two\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8203
+
+[debug] [2026-10-27T21:45:07.087Z] Got response from /__/functions.yaml {"specVersion":"v1alpha1","endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"extensions":{},"requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
