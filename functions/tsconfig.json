@@ -6,7 +6,6 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "moduleResolution": "node16",
     "rootDir": "src", // Diretório de códigos TypeScript
     "outDir": "lib", // Diretório de saída para os arquivos compilados
     "sourceMap": true, // Gera mapas de origem para facilitar o debug
@@ -16,7 +15,7 @@
     "strictNullChecks": true, // Força a verificação de valores null ou undefined
     "noUnusedLocals": true, //Sinaliza quando existem variáveis declaradas e não utilizadas
     "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
   },
   "compileOnSave": true,
   "include": ["src/**/*"], // todos os arquivos que estiver dentro de src ele vao combilar

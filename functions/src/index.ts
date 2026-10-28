@@ -6,6 +6,7 @@ import { errorHandler } from './middlewares/error-handle.middleware.js';
 import { PageNotFoundHandler } from './middlewares/page-not-found.middleware.js';
 import { auth } from './middlewares/auth.middleware.js';
 import { onRequest } from 'firebase-functions/v2/https';
+import { swaggerDocs } from './routes/swagger-docs.route.js';
 
 initializeAppAdminApp();
 initializeFirebaseApp({
@@ -13,6 +14,8 @@ initializeFirebaseApp({
 });
 
 const app = express();
+
+swaggerDocs(app);
 auth(app);
 routes(app);
 PageNotFoundHandler(app);
