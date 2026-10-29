@@ -7,6 +7,21 @@ export class CompaniesController {
         // #swagger.tags = ['Companies']
         // #swagger.summary = 'Listar empresas'
         // #swagger.description = 'Rota utilizada para listar todas as empresas cadastradas.'
+        /*
+            #swagger.responses[200] = {
+                description: 'Lista de todas as empresas',
+                content: {
+                    "application/json": {
+                        schema: {
+                            type: 'array',
+                            items: {
+                                $ref: '#/components/schemas/Company'
+                            }
+                        }
+                    }
+                }
+            }
+         */
         res.send(await new CompanyService().getAll());
     };
 
@@ -14,6 +29,19 @@ export class CompaniesController {
         // #swagger.tags = ['Companies']
         // #swagger.summary = 'Buscar empresa por ID'
         // #swagger.description = 'Rota utilizada para buscar uma empresa pelo seu ID.'
+        //  #swagger.parameters['id'] = { description: 'Id da empresa' }
+        /*
+            #swagger.responses[200] = {
+                description: 'Dados da empresa',
+                content: {
+                    "application/json": {
+                        schema: {
+                            $ref: '#/components/schemas/Company'
+                        }
+                    }
+                }
+            }
+         */
         const companyId = req.params.id;
         res.send(await new CompanyService().getById(companyId as string))
     };
@@ -22,6 +50,17 @@ export class CompaniesController {
         // #swagger.tags = ['Companies']
         // #swagger.summary = 'Cadastrar empresa'
         // #swagger.description = 'Rota utilizada para cadastrar uma nova empresa.'
+        /*  #swagger.requestBody = {
+                required: true,
+                content: {
+                    "application/json": {
+                        schema: {
+                            $ref: "#/components/schemas/addCompany"
+                        }
+                    }
+                }
+            }
+        */
         await new CompanyService().save(req.body);
         res.status(201).send({
             message: `Empresa criado com sucesso!`
@@ -32,6 +71,18 @@ export class CompaniesController {
         // #swagger.tags = ['Companies']
         // #swagger.summary = 'Alterar empresa'
         // #swagger.description = 'Rota utilizada para alterar os dados de uma empresa pelo seu ID.'
+        //  #swagger.parameters['id'] = { description: 'Id da empresa' }
+        /*  #swagger.requestBody = {
+                required: true,
+                content: {
+                    "application/json": {
+                        schema: {
+                            $ref: "#/components/schemas/updateCompany"
+                        }
+                    }
+                }
+            }
+        */
         const companyId = req.params.id;
         const company = req.body as Company;
 

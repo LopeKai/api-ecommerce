@@ -7,6 +7,21 @@ export class ProductsController {
         // #swagger.tags = ['Products']
         // #swagger.summary = 'Listar produtos'
         // #swagger.description = 'Rota utilizada para listar todos os produtos cadastrados.'
+        /*
+            #swagger.responses[200] = {
+                description: 'Lista de todos os produtos',
+                content: {
+                    "application/json": {
+                        schema: {
+                            type: 'array',
+                            items: {
+                                $ref: '#/components/schemas/Product'
+                            }
+                        }
+                    }
+                }
+            }
+         */
         res.send(await new ProductService().getAll());
     };
 
@@ -14,6 +29,22 @@ export class ProductsController {
         // #swagger.tags = ['Products']
         // #swagger.summary = 'Pesquisar produtos por categoria'
         // #swagger.description = 'Rota utilizada para pesquisar produtos pelo ID da categoria informado na query string (categoriaId).'
+        //  #swagger.parameters['categoriaId'] = { in: 'query', description: 'Id da categoria', required: true, type: 'string' }
+        /*
+            #swagger.responses[200] = {
+                description: 'Lista de produtos da categoria',
+                content: {
+                    "application/json": {
+                        schema: {
+                            type: 'array',
+                            items: {
+                                $ref: '#/components/schemas/Product'
+                            }
+                        }
+                    }
+                }
+            }
+         */
         const categoriaId = req.query.categoriaId as string
         res.send(await new ProductService().search(categoriaId));
     };
@@ -22,6 +53,19 @@ export class ProductsController {
         // #swagger.tags = ['Products']
         // #swagger.summary = 'Buscar produto por ID'
         // #swagger.description = 'Rota utilizada para buscar um produto pelo seu ID.'
+        //  #swagger.parameters['id'] = { description: 'Id do produto' }
+        /*
+            #swagger.responses[200] = {
+                description: 'Dados do produto',
+                content: {
+                    "application/json": {
+                        schema: {
+                            $ref: '#/components/schemas/Product'
+                        }
+                    }
+                }
+            }
+         */
         const productId = req.params.id;
         res.send(await new ProductService().getById(productId as string));
     };
@@ -30,6 +74,17 @@ export class ProductsController {
         // #swagger.tags = ['Products']
         // #swagger.summary = 'Cadastrar produto'
         // #swagger.description = 'Rota utilizada para cadastrar um novo produto.'
+        /*  #swagger.requestBody = {
+                required: true,
+                content: {
+                    "application/json": {
+                        schema: {
+                            $ref: "#/components/schemas/addProduct"
+                        }
+                    }
+                }
+            }
+        */
         await new ProductService().save(req.body);
         res.status(201).send({
             message: 'Produto criado com sucesso!'
@@ -40,6 +95,18 @@ export class ProductsController {
         // #swagger.tags = ['Products']
         // #swagger.summary = 'Alterar produto'
         // #swagger.description = 'Rota utilizada para alterar os dados de um produto pelo seu ID.'
+        //  #swagger.parameters['id'] = { description: 'Id do produto' }
+        /*  #swagger.requestBody = {
+                required: true,
+                content: {
+                    "application/json": {
+                        schema: {
+                            $ref: "#/components/schemas/updateProduct"
+                        }
+                    }
+                }
+            }
+        */
         const productId = req.params.id;
         const produt = req.body as Product;
         await new ProductService().update(productId as string, produt);
@@ -52,6 +119,7 @@ export class ProductsController {
         // #swagger.tags = ['Products']
         // #swagger.summary = 'Excluir produto'
         // #swagger.description = 'Rota utilizada para excluir um produto pelo seu ID.'
+        //  #swagger.parameters['id'] = { description: 'Id do produto' }
         const productId = req.params.id;
         await new ProductService().delete(productId as string);
         res.status(204).end();
